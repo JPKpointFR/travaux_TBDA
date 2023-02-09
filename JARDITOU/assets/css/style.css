@@ -7,7 +7,6 @@ nav{
     background-color: black;
     display: flex;
     margin: 3px 0;
-  
 }
 
 .navitems{
@@ -32,9 +31,36 @@ a{
     position: absolute ;
     top: 2%;
     right: 33%;
-    
+    font-size: 25px;
 }
 
 .colonne{
     width: 70%;
+}
+
+
+/* RESPONSIVE DESIGN : MOBILE */
+@media only screen and (max-width: 768px) {
+    .colonne{
+        width: 100%;
+    }
+    .menus{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .navitems{
+        margin: 0;
+        padding: 5px;
+    }
+
+    .slogan{
+        top: 0%;
+        right: 33%;
+        font-size: 20px;
+    }
 }
