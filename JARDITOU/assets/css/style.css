@@ -1,0 +1,40 @@
+nav{
+    margin: 0;
+}
+
+
+.navbar{
+    background-color: black;
+    display: flex;
+    margin: 3px 0;
+  
+}
+
+.navitems{
+    margin: 5px;
+    padding: 5px;
+}
+
+a{
+    color: white;
+}
+
+.promotion{
+    margin: 0px;
+    width: 100%;
+}
+
+.logo{
+    width: 30%;
+}
+
+.slogan{
+    position: absolute ;
+    top: 2%;
+    right: 33%;
+    
+}
+
+.colonne{
+    width: 70%;
+}
