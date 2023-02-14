@@ -34,16 +34,31 @@ a{
     font-size: 25px;
 }
 
-.colonne{
-    width: 70%;
+.divcol{
+    display: flex;
+    flex-direction: row;
 }
 
+.colonne{
+    flex-basis: 70%;
+}
+.divdeux{
+    background-color: rgba(128, 128, 128, 0.438);
+    margin-top: 5px;
+    flex-basis: 30%;
+}
 
 /* RESPONSIVE DESIGN : MOBILE */
 @media only screen and (max-width: 768px) {
     .colonne{
-        width: 100%;
+        flex-basis: 100%;
     }
+
+    .divdeux{
+        display: none;
+        
+    }
+
     .menus{
         display: flex;
         flex-direction: column;
@@ -63,4 +78,5 @@ a{
         right: 33%;
         font-size: 20px;
     }
+    
 }
