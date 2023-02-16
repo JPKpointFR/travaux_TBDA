@@ -9,6 +9,7 @@ console.log(prenom);
 
 if (nom && prenom) {
   window.alert("Bonjour " + nom + " " + prenom);
+  document.write("Bonjour " + nom + " " + prenom);
 }
 
 /*
@@ -16,7 +17,18 @@ Ecrire un programme qui calcule le produit de deux nombres entrés par l'utilisa
 */
 
 
+const nombre1 = window.prompt("Saisissez votre le nombre1");
+const nombre2 = window.prompt("Saisissez votre le nombre2");
+console.log(nombre1);
+console.log(nombre2);
 
+if (nombre1 && nombre2) {
+  a = 0
+  produit = a + nombre1 * nombre2
+  window.alert("Le résultat est " + produit);
+  document.write("Le résultat est " + produit);
+
+}
 
 
 
