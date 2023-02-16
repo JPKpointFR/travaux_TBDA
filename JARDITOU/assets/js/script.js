@@ -25,8 +25,8 @@ console.log(nombre2);
 if (nombre1 && nombre2) {
   a = 0
   produit = a + nombre1 * nombre2
-  window.alert("Le résultat est " + produit);
-  document.write("Le résultat est " + produit);
+  window.alert("   Le produit est " + produit);
+  document.write("   Le produit est " + produit);
 
 }
 
@@ -37,4 +37,13 @@ Ecrire un programme qui convertit des degrés Celsius en degrés Fahrenheit en u
 */
 
 
+const temperatureC = window.prompt("Saisissez la température en degrés Celsius");
 
+console.log(temperatureC);
+
+if (temperatureC) {
+  a = 0
+  temperatureF = a + (temperatureC*9/5) + 32
+  window.alert("  Le temperature est " + temperatureF);
+  document.write("  Le temperature est " + temperatureF);
+}
