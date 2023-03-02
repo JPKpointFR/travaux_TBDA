@@ -60,8 +60,8 @@ const strtok = (str1, str2, n) => {
     n = n
     const phrase = str1.split(str2);
     let rN = n + 1
-    
-document.write(`le mot en place ${rN} est ${phrase[n]}`);
+
+    document.write(`le mot en place ${rN} est ${phrase[n]}`);
 }
 
 strtok(str1, str2, n)
