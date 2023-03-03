@@ -2,39 +2,58 @@
 
 
 
+function programme_saisie_valeurs_numerique() {
+    let myArray = [];
+    let myArraySum = 0;
+    let i = 0;
+    myArray[i] = prompt("Entrez les donnée ") * 1;
 
+    if (myArray[i] !== 0 || myArray[i] !== null) {
+      i++;
+      myArray[i] = prompt("Entrez les donnée ") * 1;
 
+      while (myArray[i] !== 0 || myArray[i] !== null) {
+        i++;
+        myArray[i] = prompt("Entrez les donnée ") * 1;
 
+        if (myArray[i] === 0 || myArray[i] === null) {
+          const ArrayLen = myArray.length;
 
-let myArray = []
-let i = 0
-myArray[i] = prompt("Entrez les donnée ");
+          for (const num in myArray) {
+            myArraySum += myArray[num];
+          }
 
-while (myArray[i] !== 0) {
-    console.log(myArray[i]);
-    myArray[i] = prompt("Entrez les donnée ");
-    i++
-}
+          console.log(myArraySum);
+          console.log(myArraySum / ArrayLen);
 
-const ArrayLen = myArray.length;
-const array1 = [1, 2, 3, 4];
+          document.write(`Les données du tableaux sont: ${myArray} 
+  <br><br>
+  Le nombre de valeurs saisies est: ${ArrayLen}
+  <br><br>
+  la somme: ${myArraySum}
+  <br><br>
+  la moyenne: ${myArraySum / ArrayLen}`);
+          break;
+        }
+      }
+    } else {
+      const ArrayLen = myArray.length;
 
-const myArraySum = myArray.reduce(
-  (accumulator, currentValue) => accumulator + currentValue
-);
+      for (const num in myArray) {
+        myArraySum += myArray[num];
+      }
 
-document.write(`Les données du tableaux sont: ${myArray} 
-<br><br>
-Le nombre de valeurs saisies est: ${ArrayLen}
+      console.log(myArraySum);
+      console.log(myArraySum / ArrayLen);
 
-la somme: ${myArraySum}
+      document.write(`Les données du tableaux sont: ${myArray} 
+  <br><br>
+  Le nombre de valeurs saisies est: ${ArrayLen}
+  <br><br>
+  la somme: ${myArraySum}
+  <br><br>
+  la moyenne: ${myArraySum / ArrayLen}`);
+    }
+  }
 
-la moyenne: ${myArraySum/ArrayLen}
-
-
-`);
-
-
-
-
-
+  programme_saisie_valeurs_numerique();
