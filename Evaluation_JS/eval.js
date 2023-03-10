@@ -160,7 +160,7 @@ Saisir 501 € et quantité = 1 : remise 10% (-50,1 €) soit 450,90 et frais po
 Saisir 100 € et quantité = 2 : 200 € donc remise 5% soit 190 € et frais de port 2% soit 3,8 € mini 6 €; à payer : 190+6 = 196 €
 Saisir 3 € et quantité = 1 : remise 0, frais de port 2% soit 0.06 € donc le minimum de 6 € s'applique; à payer : 3+6 = 9 €
 
- */
+ 
 const PU = parseFloat(prompt("Saisissez le prix unitaire du produit"));
 const QTECOM = parseFloat(prompt("Saisissez la quantité souhaitée"));
 let TOT = PU * QTECOM;
@@ -212,3 +212,4 @@ if (PORT != 6) {
 } else {
   console.log(`Avec frais de port de ${PORTPOUR} soit +${PORTINI.toFixed(2)}, donc le minimum s'applique, soit +${PORT.toFixed(2)}€ à payer\nPour un total de : ${TOT.toFixed(2)}€`);
 }
+*/
