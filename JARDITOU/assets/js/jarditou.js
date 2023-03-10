@@ -17,38 +17,42 @@ function validateForm() {
   const email = document.getElementById('email');
   const sujet = document.getElementById('couleur');
   const filtreEmail = new RegExp(/^[\w-.]+@([\w-]+.)+[\w-]+.[\w-]{2,}$/);
+  const filtreCP = new RegExp(/^[0-9]{5}$/);
 
-  if (nom.value.trim() === '') {
+
+
+
+  if (!nom.value) {
     alert('Veuillez entrer votre nom.');
     return false;
   }
 
-  if (prenom.value.trim() === '') {
+  if (!prenom.value) {
     alert('Veuillez entrer votre prénom.');
     return false;
   }
 
-  if (date.value.trim() === '') {
+  if (!date.value) {
     alert('Veuillez entrer votre date de naissance.');
     return false;
   }
 
-  if (cp.value.trim() === '') {
+  if (!filtreCP.test(cp.value)) {
     alert('Veuillez entrer votre code postal.');
     return false;
   }
 
-  if (adresse.value.trim() === '') {
+  if (!adresse.value) {
     alert('Veuillez entrer votre adresse.');
     return false;
   }
 
-  if (ville.value.trim() === '') {
+  if (!ville.value) {
     alert('Veuillez entrer votre ville.');
     return false;
   }
 
-  if (email.value.trim() === '') {
+  if (!email.value) {
     alert('Veuillez entrer votre adresse email.');
     return false;
   } else if (!filtreEmail.test(email.value)) {
@@ -56,7 +60,7 @@ function validateForm() {
     return false;
   }
 
-  if (sujet.value.trim() === '') {
+  if (!sujet.value) {
     alert('Veuillez sélectionner un sujet.');
     return false;
   }
